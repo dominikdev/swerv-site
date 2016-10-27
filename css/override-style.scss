@@ -68,7 +68,7 @@ i.fa-mobile {
         margin-bottom: 45px;
         line-height: 1.6em;
         font-weight: 100;
-
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 
         span {
             color: #D63636;
@@ -241,7 +241,7 @@ header {
         width: 100%;
         position: absolute;
         z-index: 999;
-        padding: 13% 0;
+        padding: 16% 0;
         // padding: 13% 25% 0 10.2%;
         text-align: left;
         background-color: rgba(0, 0, 0, 0.4);
@@ -322,7 +322,7 @@ header {
     // .col-lg-12
     // {
         padding: 30px 15px;
-        border-top: 4px solid #D63636;
+        // border-top: 4px solid #D63636;
         position: absolute;
         color: #fff !important;
 
@@ -331,8 +331,10 @@ header {
         z-index: 999;
 
         p {
-            font-size: 25px;
-            font-weight: 300;
+                font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         }
 
     // }
