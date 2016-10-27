@@ -151,12 +151,13 @@ h1 {
     margin: 0 auto;
     width: 100%; } }
 header {
+  background: none !important;
   overflow: hidden !important;
   height: auto !Important;
   min-height: 0;
   border-bottom: 10px solid #D63636; }
   header #vid-wrap {
-    display: none !important; }
+    width: 110% !important; }
   header .overlay {
     height: 100%;
     width: 100%;
@@ -166,11 +167,13 @@ header {
     text-align: left;
     background-color: rgba(0, 0, 0, 0.4); }
     header .overlay h1 {
-      font-size: 110px; }
+      font-size: 95px;
+      text-shadow: 2px 2px 2px #000; }
     header .overlay h2 {
       font-weight: 100;
-      font-size: 70px;
-      letter-spacing: 2px; }
+      font-size: 60px;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 1px #000; }
 
 #process {
   background: url(../img-fix/process-1x.jpg) no-repeat center;
@@ -192,9 +195,6 @@ header {
 @media (min-width: 3000px) {
   #process {
     background-image: url("../img-fix/process-6x.jpg"); } }
-#vid-wrap {
-  -webkit-filter: grayscale(100%); }
-
 #mainNav {
   background: none;
   padding-top: 25px;
@@ -234,7 +234,7 @@ header {
   bottom: 0;
   z-index: 999; }
   #lower-top p {
-    font-size: 29px;
+    font-size: 25px;
     font-weight: 300; }
 
 #about p {

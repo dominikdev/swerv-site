@@ -211,12 +211,16 @@ i.fa-mobile {
 }
 
 header {
-    // background: none !important;
+    background: none !important;
     overflow: hidden !important;
     height: auto !Important;
     min-height: 0;
     border-bottom:10px solid #D63636;
-    #vid-wrap{display:none !important;}
+    // #vid-wrap{display:none !important;}
+    #vid-wrap
+    {
+        width:110% !important;
+    }
     .overlay
     {
         height: 100%;
@@ -228,13 +232,17 @@ header {
         text-align: left;
         background-color: rgba(0, 0, 0, 0.4);
 
-        h1 {    font-size: 110px;}
+        h1 {    
+            font-size: 95px;
+            text-shadow: 2px 2px 2px #000;
+        }
 
         h2 
         {
             font-weight: 100;
-            font-size: 70px;
+            font-size: 60px;
             letter-spacing: 2px;
+            text-shadow: 1px 1px 1px #000;
         }
     } // ./overlay
 }
@@ -250,7 +258,7 @@ header {
 @media (min-width: 2500px){#process{ background-image: url("../img-fix/process-5x.jpg"); } }
 @media (min-width: 3000px){#process{ background-image: url("../img-fix/process-6x.jpg"); } }
 #vid-wrap {
-    -webkit-filter: grayscale(100%);
+    // -webkit-filter: grayscale(100%);
 }
 
 #mainNav {
@@ -309,7 +317,7 @@ header {
         z-index: 999;
 
         p {
-            font-size: 29px;
+            font-size: 25px;
             font-weight: 300;
         }
 
@@ -572,4 +580,8 @@ footer
     {
         display:none;
     }
+}
+.fadein{
+    // opacity:0.0;
+    // transition:opacity 1s ease;
 }
