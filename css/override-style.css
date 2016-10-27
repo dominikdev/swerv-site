@@ -151,7 +151,6 @@ h1 {
     margin: 0 auto;
     width: 100%; } }
 header {
-  background: none !important;
   overflow: hidden !important;
   height: auto !Important;
   min-height: 0;

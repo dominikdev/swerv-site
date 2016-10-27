@@ -51,3 +51,12 @@ sendContactForm = function(fInfo,url,cb){
     }});
 };
 
+$('.fadein').each(function(i){
+	
+});
+
+$(document).ready(function(){
+	webApp = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) ? false : true;
+	console.log(webApp);
+		if(!webApp) $('#vid-wrap').hide();
+	});
