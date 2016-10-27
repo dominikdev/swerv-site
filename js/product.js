@@ -16,8 +16,8 @@ onSubmitForm = function(){
 	});
 	
 	console.log(canSubmit + " : " + JSON.stringify(dataToSub));
-	return false;
-	// if(canSubmit) sendContactForm(dataToSub,'contact_form.php');
+	// return false;
+	if(canSubmit) sendContactForm(dataToSub,'contact_form.php');
 }
 inputVal = function(type,inpt){
 	switch(type){
@@ -37,7 +37,7 @@ inputVal = function(type,inpt){
 	}
 }
 sendContactForm = function(fInfo,url,cb){
-	// console.log('send form:  '+ JSON.stringify(fInfo));
+	console.log('send form:  '+ JSON.stringify(fInfo));
 	sendingForm =  setTimeout(function() { canSendForm =true;}, 10000);
 	$.ajax({
 		type: 'post',
