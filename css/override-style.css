@@ -17,6 +17,15 @@ h3.service-head {
     color: rgba(0, 0, 0, 0.75);
     display: none !important; }
 
+#about {
+  background: #fff;
+  color: #D63636; }
+  #about p {
+    color: #333; }
+  #about .btn.btn-default {
+    background: #D63636;
+    color: #fff; }
+
 i.fa {
   color: #D63636; }
 
@@ -154,10 +163,9 @@ header {
   overflow: hidden !important;
   height: auto !Important;
   min-height: 0;
-  background-size: cover !important;
-  border-bottom: 10px solid #D63636; }
+  background-size: cover !important; }
   header #vid-wrap {
-    width: 110% !important; }
+    width: 115% !important; }
   header .overlay {
     height: 100%;
     width: 100%;
@@ -236,9 +244,6 @@ header {
   #lower-top p {
     font-size: 25px;
     font-weight: 300; }
-
-#about p {
-  font-size: 40px; }
 
 #mainNav.affix {
   background: rgba(0, 0, 0, 0.5); }

@@ -22,7 +22,20 @@ h3.service-head {
 
     }
 }
-
+#about
+{
+    background:#fff;
+    color: #D63636;
+    p{
+        color:#333;
+    }
+    .btn.btn-default
+    {
+        background:#D63636;
+        // background:#fff;
+        color: #fff;
+    }
+}
 i.fa {
     color: #D63636;
 
@@ -216,11 +229,11 @@ header {
     height: auto !Important;
     min-height: 0;
     background-size:cover !important;
-    border-bottom:10px solid #D63636;
+    // border-bottom:10px solid #D63636;
     // #vid-wrap{display:none !important;}
     #vid-wrap
     {
-        width:110% !important;
+        width:115% !important;
     }
     .overlay
     {
@@ -325,9 +338,6 @@ header {
     // }
 }
 
-#about p {
-    font-size: 40px;
-}
 
 #mainNav.affix {
     background: rgba(0, 0, 0, 0.5);
