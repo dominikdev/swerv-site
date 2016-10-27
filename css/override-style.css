@@ -154,6 +154,7 @@ header {
   overflow: hidden !important;
   height: auto !Important;
   min-height: 0;
+  background-size: cover !important;
   border-bottom: 10px solid #D63636; }
   header #vid-wrap {
     width: 110% !important; }
