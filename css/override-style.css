@@ -81,9 +81,11 @@ h1 {
   background: url("../img-fix/table-1x.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed; }
+  
   #tes .container {
     background: rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.4); }
+    /*box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.4); */
+  }
   #tes blockquote {
     padding: 10px 20px;
     margin: 0 0 20px;
@@ -174,7 +176,7 @@ header {
     z-index: 999;
     padding: 16% 0;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.4); }
+    background-color: rgba(0, 0, 0, 0.6); }
     header .overlay h1 {
       font-size: 95px;
       text-shadow: 2px 2px 2px #000; }
@@ -254,8 +256,8 @@ header {
 
 .service-box {
   padding: 20px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.7); }
+  /*border-radius: 10px;*/
+  background: rgba(255, 255, 255, 0.9); }
   .service-box i.fa {
     color: #D63636; }
   .service-box h2 {
