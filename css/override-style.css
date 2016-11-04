@@ -44,8 +44,7 @@ h1 {
   line-height: 1.6em;
   font-weight: 100;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  padding-bottom: 25px;
-  border-bottom: 5px solid #D63636; }
+  padding-bottom: 25px; }
   #who-we-are .col-lg-12
   h1 span {
     color: #D63636;
@@ -80,10 +79,15 @@ h1 {
 #tes {
   background: url("../img-fix/table-1x.jpg") no-repeat center;
   background-size: cover;
-  background-attachment: fixed; }
-  #tes .container {
+  background-attachment: fixed;
+  position: relative; }
+  #tes .tes-wrap {
     background: rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.4); }
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; }
   #tes blockquote {
     padding: 10px 20px;
     margin: 0 0 20px;
@@ -128,6 +132,54 @@ h1 {
   text-align: center;
   height: 80px; }
 
+#services {
+  position: relative; }
+  #services .overlay {
+    position: absolute;
+    background: #D63636;
+    top: 0;
+    width: 0%;
+    height: 0%;
+    border-radius: 10px; }
+    #services .overlay.expanded {
+      transition: all 2s ease;
+      height: 100%;
+      width: 100%;
+      top: 0 !important;
+      left: 0 !important; }
+
+#services.selected {
+  background-color: #D63636;
+  transition: all 1s 1.5s ease; }
+  #services.selected .service-content-right {
+    opacity: 0.2; }
+    #services.selected .service-content-right h3.service-head, #services.selected .service-content-right i.fa {
+      color: #fff;
+      transition: all 1s 1s ease; }
+    #services.selected .service-content-right.selected h3.service-head, #services.selected .service-content-right.selected i.fa {
+      color: #fff; }
+
+#service-info {
+  max-height: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0;
+  transition: all 1s ease;
+  transition-delay: 0s;
+  position: relative; }
+  #service-info #close {
+    position: absolute;
+    cursor: pointer;
+    top: 25px;
+    right: 100px;
+    transform: scale(3); }
+    #service-info #close:active {
+      opacity: 0.5; }
+  #service-info.expanded {
+    max-height: 1000px;
+    padding: 100px 0;
+    transition-delay: 2s; }
+
 .service-content-right {
   border: none !important;
   min-height: 0;
@@ -136,8 +188,11 @@ h1 {
   padding: 10px 30px !important;
   margin-bottom: 50px;
   text-align: left !important; }
+  .service-content-right.selected {
+    opacity: 1.0 !important; }
+    .service-content-right.selected .wrap {
+      background-color: transparent; }
   .service-content-right div.wrap {
-    background-color: #fff;
     border-radius: 5px;
     text-align: left; }
 

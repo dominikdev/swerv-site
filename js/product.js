@@ -55,6 +55,30 @@ $('.fadein').each(function(i){
 	
 });
 
+$(document).on('click','#close',function(){
+	$('.service-content-right.selected, #services').removeClass('selected');
+	$('#service-info, #services .overlay').removeClass('expanded');
+	var p = $('#services').position().top;
+	$("html, body").animate({ scrollTop: p },1000);
+});
+$(document).on('click','.service-content-right',function(){
+	$('.service-content-right.selected').removeClass('selected');
+	$(this).addClass("selected");
+	var pos = $(this).position();
+	$('#services .overlay').css('top', pos.top+75).css('left',pos.left+125);
+	$('#services').addClass("selected");
+	$('#service-info').addClass("expanded");
+	setTimeout(function(){$('#services .overlay').addClass('expanded');},500);
+	var p = $('#service-info').position().top;
+	setTimeout(
+		function(){
+			$("html, body").animate({ scrollTop: p },1000);
+			// $('body').animate({scrollTop: $('#service-info').position().top}
+				// , 1000, function() {},2000);
+		},2000);
+	console.log($("#service-info")[0].getBoundingClientRect());
+
+});
 $(document).ready(function(){
 	webApp = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) ? false : true;
 	console.log(webApp);
