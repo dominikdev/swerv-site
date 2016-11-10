@@ -5,12 +5,13 @@ h3.service-head {
   text-align: left;
   font-weight: 400;
   font-size: 1.5em;
-  LETTER-SPACING: -1.2px;
+  LETTER-SPACING: 0.4px;
   text-align: left;
   width: auto !important;
   border-left: 3px solid #D63636;
   border: none;
   text-align: center;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   display: block !important; }
   h3.service-head .small {
     font-size: 16px;
@@ -28,6 +29,16 @@ h3.service-head {
 
 i.fa {
   color: #fff; }
+
+#services h1 {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #fff;
+  font-size: 44px;
+  line-height: 50px;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+  font-weight: 100;
+  text-align: center; }
 
 i.fa-mobile {
   color: #fff;
@@ -190,7 +201,10 @@ i.fa-mobile {
   text-align: left;
   padding: 10px 30px !important;
   margin-bottom: 50px;
-  text-align: left !important; }
+  text-align: left !important;
+  opacity: 0.7; }
+  .service-content-right:hover {
+    opacity: 1.0; }
   .service-content-right.selected {
     opacity: 1.0 !important; }
     .service-content-right.selected .wrap {
