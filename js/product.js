@@ -37,7 +37,6 @@ inputVal = function(type,inpt){
 	}
 }
 sendContactForm = function(fInfo,url,cb){
-	console.log('send form:  '+ JSON.stringify(fInfo));
 	sendingForm =  setTimeout(function() { canSendForm =true;}, 10000);
 	$.ajax({
 		type: 'post',
@@ -46,7 +45,6 @@ sendContactForm = function(fInfo,url,cb){
 		encode : true,
 		success: function(result){
         $('#contact').find('input, textarea').val('');
-        alert('message sent');
         canSendForm = true;
     }});
 };
@@ -62,21 +60,25 @@ $(document).on('click','#close',function(){
 	$("html, body").animate({ scrollTop: p },1000);
 });
 $(document).on('click','.service-content-right',function(){
+	var p = $('#service-info').position().top;
 	$('.service-content-right.selected').removeClass('selected');
 	$(this).addClass("selected");
+	if($('#service-info').hasClass('expanded'))
+	{
+		$("html, body").animate({ scrollTop: p },1000);
+		return;
+	}
+	
 	var pos = $(this).position();
 	$('#services .overlay').css('top', pos.top+75).css('left',pos.left+125);
 	$('#services').addClass("selected");
 	$('#service-info').addClass("expanded");
 	setTimeout(function(){$('#services .overlay').addClass('expanded');},500);
-	var p = $('#service-info').position().top;
+	
 	setTimeout(
 		function(){
 			$("html, body").animate({ scrollTop: p },1000);
-			// $('body').animate({scrollTop: $('#service-info').position().top}
-				// , 1000, function() {},2000);
 		},2000);
-	console.log($("#service-info")[0].getBoundingClientRect());
 
 });
 $(document).ready(function(){

@@ -13,7 +13,6 @@ $form_info[4] = $_POST['message'];
 	$message .= "Message: ".$form_info[4]."\n\n";
 	$headers="From: contact@swervtechnologies.com\r\n"; 
 	$subject = "New Contact - Swerv Website";
-	// $to_address = "info@whtspr.com";
 	$to_address = "contact@swervtechnologies.com";
 
 	mail("$to_address","$subject","$message" ,"$headers");

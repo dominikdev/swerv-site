@@ -37,16 +37,14 @@ i.fa-mobile {
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif !important;
   font-weight: 100 !important; }
 
-#who-we-are .col-lg-12
-h1 {
+#who-we-are h1 {
   text-align: center;
   margin-bottom: 45px;
   line-height: 1.6em;
   font-weight: 100;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   padding-bottom: 25px; }
-  #who-we-are .col-lg-12
-  h1 span {
+  #who-we-are h1 span {
     color: #D63636;
     font-style: italic; }
 #who-we-are .photo-box {
@@ -79,7 +77,6 @@ h1 {
 #tes {
   background: url("../img-fix/table-1x.jpg") no-repeat center;
   background-size: cover;
-<<<<<<< HEAD
   background-attachment: fixed;
   position: relative; }
   #tes .tes-wrap {
@@ -89,14 +86,6 @@ h1 {
     width: 100%;
     top: 0;
     left: 0; }
-=======
-  background-attachment: fixed; }
-  
-  #tes .container {
-    background: rgba(0, 0, 0, 0.4);
-    /*box-shadow: 0px 0px 5px 10px rgba(0, 0, 0, 0.4); */
-  }
->>>>>>> origin/master
   #tes blockquote {
     padding: 10px 20px;
     margin: 0 0 20px;
@@ -238,7 +227,7 @@ header {
     z-index: 999;
     padding: 16% 0;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.6); }
+    background-color: rgba(0, 0, 0, 0.4); }
     header .overlay h1 {
       font-size: 95px;
       text-shadow: 2px 2px 2px #000; }
@@ -318,8 +307,8 @@ header {
 
 .service-box {
   padding: 20px;
-  /*border-radius: 10px;*/
-  background: rgba(255, 255, 255, 0.9); }
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7); }
   .service-box i.fa {
     color: #D63636; }
   .service-box h2 {
