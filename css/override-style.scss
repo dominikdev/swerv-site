@@ -49,6 +49,7 @@ i.fa {
     // background-size:cover;
     // border-top:
     // border-top:10px solid #D63636;
+    padding-top:60px;
     h1
     {
             font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -56,9 +57,15 @@ i.fa {
             font-size:44px;
             line-height:50px;
             letter-spacing: 4px;
-            margin-bottom:25px;
+            margin-bottom:76px;
             font-weight:100;
             text-align:center;
+            text-transform: uppercase;
+    }
+    hr
+    {
+         border-color: #fff;
+
     }
 }
 
@@ -194,8 +201,18 @@ i.fa-mobile {
     margin: 0 auto;
     text-align: center;
     height: 80px;
-    
+    overflow:hidden;
+    i.fa
+    {
+        
+        
+        transform: translateY(120%);
+        transition: all 1s ease;
+        
+    }
+    &.show{i.fa{transform: translateY(0);}
     // opacity:0.0;    
+}
 }
 #services
 {
@@ -358,6 +375,7 @@ header {
     background-size:cover !important;
     // border-bottom:10px solid #D63636;
     // #vid-wrap{display:none !important;}
+        min-height: 560px;
     #vid-wrap
     {
         width:115% !important;
@@ -371,7 +389,7 @@ header {
         padding: 16% 0;
         // padding: 13% 25% 0 10.2%;
         text-align: left;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.6);
 
         h1 {    
             font-size: 95px;

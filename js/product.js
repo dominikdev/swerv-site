@@ -93,7 +93,7 @@ $(document).ready(function(){
 
 		if(pos >= ser)
 		{
-			// $('.ic-wrap').each
+			$('.ic-wrap').addClass('show');
 		}
 
 	});	

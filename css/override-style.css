@@ -30,15 +30,20 @@ h3.service-head {
 i.fa {
   color: #fff; }
 
-#services h1 {
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #fff;
-  font-size: 44px;
-  line-height: 50px;
-  letter-spacing: 4px;
-  margin-bottom: 25px;
-  font-weight: 100;
-  text-align: center; }
+#services {
+  padding-top: 60px; }
+  #services h1 {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    font-size: 44px;
+    line-height: 50px;
+    letter-spacing: 4px;
+    margin-bottom: 76px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase; }
+  #services hr {
+    border-color: #fff; }
 
 i.fa-mobile {
   color: #fff;
@@ -139,7 +144,13 @@ i.fa-mobile {
   display: block !important;
   margin: 0 auto;
   text-align: center;
-  height: 80px; }
+  height: 80px;
+  overflow: hidden; }
+  .ic-wrap i.fa {
+    transform: translateY(120%);
+    transition: all 1s ease; }
+  .ic-wrap.show i.fa {
+    transform: translateY(0); }
 
 #services {
   position: relative;
@@ -241,7 +252,8 @@ header {
   overflow: hidden !important;
   height: auto !Important;
   min-height: 0;
-  background-size: cover !important; }
+  background-size: cover !important;
+  min-height: 560px; }
   header #vid-wrap {
     width: 115% !important; }
   header .overlay {
@@ -251,7 +263,7 @@ header {
     z-index: 999;
     padding: 16% 0;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.7); }
+    background-color: rgba(0, 0, 0, 0.6); }
     header .overlay h1 {
       font-size: 95px;
       text-shadow: 2px 2px 2px #000; }
