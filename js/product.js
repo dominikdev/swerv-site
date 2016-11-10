@@ -22,18 +22,18 @@ onSubmitForm = function(){
 inputVal = function(type,inpt){
 	switch(type){
 		case 'email':
-			return (inpt.indexOf('@') > -1 && inpt.lastIndexOf('.') > inpt.indexOf('@')) ? true : false;
+		return (inpt.indexOf('@') > -1 && inpt.lastIndexOf('.') > inpt.indexOf('@')) ? true : false;
 		break;
 		case 'first_name':
 		case 'last_name':
-			return (inpt.length > 0);
-			break;
+		return (inpt.length > 0);
+		break;
 		case 'message':
-			return true;
-			break;
+		return true;
+		break;
 		case 'phone':
-			return (inpt.length >=10)
-			break;
+		return (inpt.length >=10)
+		break;
 	}
 }
 sendContactForm = function(fInfo,url,cb){
@@ -44,9 +44,9 @@ sendContactForm = function(fInfo,url,cb){
 		data : fInfo,
 		encode : true,
 		success: function(result){
-        $('#contact').find('input, textarea').val('');
-        canSendForm = true;
-    }});
+			$('#contact').find('input, textarea').val('');
+			canSendForm = true;
+		}});
 };
 
 $('.fadein').each(function(i){
@@ -80,9 +80,14 @@ $(document).on('click','.service-content-right',function(){
 			$("html, body").animate({ scrollTop: p },1000);
 		},2000);
 
+
 });
 $(document).ready(function(){
 	webApp = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) ? false : true;
 	console.log(webApp);
-		if(!webApp) $('#vid-wrap').hide();
-	});
+	if(!webApp) $('#vid-wrap').hide();
+	$(document).on('scroll',function(){
+		console.log(window.pageYOffset);
+		console.log($('#services').position().top);
+	});	
+});

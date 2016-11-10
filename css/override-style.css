@@ -128,7 +128,8 @@ i.fa-mobile {
   display: block !important;
   margin: 0 auto;
   text-align: center;
-  height: 80px; }
+  height: 80px;
+  opacity: 0.0; }
 
 #services {
   position: relative; }
@@ -138,13 +139,14 @@ i.fa-mobile {
     top: 0;
     width: 0%;
     height: 0%;
-    border-radius: 10px; }
+    border-radius: 100%; }
     #services .overlay.expanded {
       transition: all 2s ease;
       height: 100%;
       width: 100%;
       top: 0 !important;
-      left: 0 !important; }
+      left: 0 !important;
+      border-radius: 0px; }
 
 #services.selected {
   background-color: #D63636;
