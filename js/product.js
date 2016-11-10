@@ -87,7 +87,14 @@ $(document).ready(function(){
 	console.log(webApp);
 	if(!webApp) $('#vid-wrap').hide();
 	$(document).on('scroll',function(){
-		console.log(window.pageYOffset);
-		console.log($('#services').position().top);
+		// console.log(window.pageYOffset);
+		var pos = window.pageYOffset;
+		var ser = $('#services').position().top - 100;
+
+		if(pos >= ser)
+		{
+			// $('.ic-wrap').each
+		}
+
 	});	
 });
