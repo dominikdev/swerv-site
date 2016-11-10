@@ -78,7 +78,7 @@ $(document).on('click','.service-content-right',function(){
 	setTimeout(
 		function(){
 			$("html, body").animate({ scrollTop: p },1000);
-		},2000);
+		},200);
 
 
 });

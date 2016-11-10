@@ -1,7 +1,7 @@
 h3.service-head {
   font-size: 16px;
   font-weight: 400;
-  color: #444;
+  color: #fff;
   text-align: left;
   font-weight: 400;
   font-size: 1.5em;
@@ -27,7 +27,7 @@ h3.service-head {
     color: #fff; }
 
 i.fa {
-  color: #D63636; }
+  color: #fff; }
 
 i.fa-mobile {
   color: #fff;
@@ -131,9 +131,11 @@ i.fa-mobile {
   height: 80px; }
 
 #services {
-  position: relative; }
+  position: relative;
+  background-color: #D63636; }
   #services .overlay {
     position: absolute;
+    display: none;
     background: #D63636;
     top: 0;
     width: 0%;
@@ -177,7 +179,7 @@ i.fa-mobile {
   #service-info.expanded {
     max-height: 1000px;
     padding: 100px 0;
-    transition-delay: 2s; }
+    transition-delay: 0.5s; }
 
 .service-content-right {
   border: none !important;
@@ -190,7 +192,12 @@ i.fa-mobile {
   .service-content-right.selected {
     opacity: 1.0 !important; }
     .service-content-right.selected .wrap {
-      background-color: transparent; }
+      background-color: transparent;
+      color: #fff; }
+      .service-content-right.selected .wrap i.fa {
+        color: #fff !important; }
+      .service-content-right.selected .wrap h3.service-head {
+        color: #fff !important; }
   .service-content-right div.wrap {
     border-radius: 5px;
     text-align: left; }
@@ -228,7 +235,7 @@ header {
     z-index: 999;
     padding: 16% 0;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.7); }
+    background-color: rgba(0, 0, 0, 0.6); }
     header .overlay h1 {
       font-size: 95px;
       text-shadow: 2px 2px 2px #000; }
