@@ -250,6 +250,10 @@ i.fa-mobile {
         cursor:pointer;
         top: 25px;
         right: 100px;
+        i.fa
+        {
+            color:#D63636;
+        }
         transform: scale(3);
         &:active
         {
@@ -349,7 +353,7 @@ header {
         padding: 16% 0;
         // padding: 13% 25% 0 10.2%;
         text-align: left;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.7);
 
         h1 {    
             font-size: 95px;
