@@ -74,13 +74,68 @@ $(document).on('click','.service-content-right',function(){
 	$('#services').addClass("selected");
 	$('#service-info').addClass("expanded");
 	setTimeout(function(){$('#services .overlay').addClass('expanded');},500);
-	
+	 
 	setTimeout(
 		function(){
 			$("html, body").animate({ scrollTop: p },1000);
 		},200);
 
 
+});
+$(document).on('click','.left-arrow',function(){
+	$('#inner-img-slider').addClass('left');
+});
+$(document).on('click','.port-sort-btn',function(){
+	var s = $(this).attr('sort-sel');
+
+	var allSel = ($('.port-sort-btn.selected').length == 4) ? true : false;
+	console.log(allSel);
+	if(allSel)
+	{
+		$('.port-box-wrap').not('.port-box-wrap[sort='+s+']').addClass("remove");
+		$('.port-sort-btn').not('.port-sort-btn[sort-sel='+s+']').removeClass("selected");
+
+		return false;
+	}
+
+	if($(this).hasClass('selected'))
+	{
+		$('.port-box-wrap[sort='+s+']').addClass("remove");
+		$(this).toggleClass("selected");
+		return;	
+	}
+	else
+	{
+		// var s = $(this).attr('sort-sel');
+		$('.port-box-wrap[sort='+s+']').removeClass("remove");
+		$(this).toggleClass("selected");
+		return;	
+	}
+	$(this).toggleClass("selected");
+	var s = $(this).attr('sort-sel');
+	console.log(s);
+	$('.port-box-wrap').not('.port-box-wrap[sort='+s+']').addClass('remove');
+	setTimeout(function(){
+		$('.port-box-wrap.remove').hide();
+	},1000);
+});
+$(document).on('click','.port-box',function(){
+	// $("#port-popup").addClass('show');
+	// $('#port-highlight').addClass("expanded");
+	// $('.port-box-wrap').addClass('remove');
+});
+$(document).on('click','#close-port',function(){
+	// $("#port-popup").addClass('show');
+	// $('#port-highlight').removeClass("expanded");
+	// $('.port-box-wrap').removeClass('remove');
+});
+$(document).on('click','#expand',function(){
+	// $("#port-popup").addClass('show');
+	// $('#port-highlight').addClass("expand-img");
+	// $('.port-box-wrap').removeClass('remove');
+});
+$(document).on('click','#port-popup .close',function(){
+	// $("#port-popup").removeClass('show');
 });
 $(document).ready(function(){
 	webApp = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) ? false : true;
